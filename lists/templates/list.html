@@ -11,3 +11,11 @@
         {% endfor %}
     </table>
 {% endblock %}
+
+{% block extra_content %}
+
+    <form action="{ url 'share_list' list.id }" method="POST">
+        <input type="email" name='sharee' placeholder="your-friend@example.com">
+    </form>
+
+{% endblock %}
